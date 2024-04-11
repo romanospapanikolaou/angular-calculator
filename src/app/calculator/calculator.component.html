@@ -1,0 +1,141 @@
+<div class="container-fluid">
+  <div class="jumbotron col-sm-9 p-2 m-0 bg-warning">
+    <h2 class="text-center">Angular Calculator</h2>
+    <div class="form-group">
+      <label for="usr">Input</label>
+      <div class="form-control" type="text">{{ input }}</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Results</label>
+      <div class="form-control" type="text">{{ result }}</div>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-info col-sm-6" type="button" (click)="allClear()">
+        Clear
+      </button>
+      <button class="btn btn-danger col-sm-3" type="button" (click)="clear()">
+        Back
+      </button>
+      <button
+        class="btn btn-secondary col-sm-3"
+        type="button"
+        (click)="pressOperator('/')"
+      >
+        /
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('7')"
+      >
+        7
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('8')"
+      >
+        8
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('9')"
+      >
+        9
+      </button>
+      <button
+        class="btn btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="pressOperator('*')"
+      >
+        X
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('4')"
+      >
+        4
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('5')"
+      >
+        5
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('6')"
+      >
+        6
+      </button>
+      <button
+        class="btn btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="pressOperator('-')"
+      >
+        -
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('1')"
+      >
+        1
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('2')"
+      >
+        2
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('3')"
+      >
+        3
+      </button>
+      <button
+        class="btn btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="pressOperator('+')"
+      >
+        +
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('.')"
+      >
+        .
+      </button>
+      <button
+        class="btn btn-primary col-sm-3 p-1"
+        type="button"
+        (click)="pressNum('0')"
+      >
+        0
+      </button>
+      <button
+        class="btn btn-lg btn-success col-sm-6 p-1"
+        type="button"
+        (click)="getAnswer()"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
