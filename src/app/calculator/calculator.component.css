@@ -3,19 +3,41 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #5a6268;
+  background-color: #333; /* Fallback color */
+  background-image: url("https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .jumbotron {
-  max-width: 400px;
-  background-color: lightgrey;
+  max-width: 500px;
+  background-color: rgb(144, 144, 144);
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+  border: 4px solid #353535; /* Gray border color */
+}
+
+.background-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Add blur effect */
+  filter: blur(8px);
 }
 
 .form-group {
   padding: 10px;
   font-weight: bold;
+  background-color: #d3d3d3; /* Light Gray background color */
+  border: 4px solid #353535; /* Gray border color */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.9); /* Dark Gray shadow */
+  color: #333; /* Dark text color */
 }
 
 .form-control {
@@ -29,49 +51,52 @@
 
 .btn {
   font-size: 24px;
-  padding: 15px 0;
+  font-weight: bold;
+  padding: 15px 15px;
   background-color: #000; /* Change button background color to black */
   color: #fff; /* Change button text color to white */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+  border: 4px solid #353535; /* Gray border color */
 }
 
 .btn-info {
-  background-color: #17a2b8;
+  background-color: #47b7c8;
 }
 
 .btn-info:hover {
-  background-color: #138496;
+  background-color: #1a5f6a;
 }
 
 .btn-danger {
-  background-color: #dc3545;
+  background-color: #dc4352;
 }
 
 .btn-danger:hover {
-  background-color: #c82333;
+  background-color: #90121f;
 }
 
 .btn-secondary {
-  background-color: #6c757d;
+  background-color: #98a1a7;
 }
 
 .btn-secondary:hover {
-  background-color: #5a6268;
+  background-color: #5f666d;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #768088;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #43494d;
 }
 
 .btn-success {
-  background-color: #28a745;
+  background-color: #30b850;
 }
 
 .btn-success:hover {
-  background-color: #218838;
+  background-color: #1a632a;
 }
 
 .col-sm-12 {
