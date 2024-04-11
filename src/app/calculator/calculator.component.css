@@ -8,13 +8,14 @@
 
 .jumbotron {
   max-width: 400px;
-  background-color: #f8f9fa;
+  background-color: lightgrey;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 .form-group {
   padding: 10px;
+  font-weight: bold;
 }
 
 .form-control {
@@ -23,16 +24,18 @@
   border-radius: 5px;
   padding: 10px;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .btn {
   font-size: 24px;
   padding: 15px 0;
+  background-color: #000; /* Change button background color to black */
+  color: #fff; /* Change button text color to white */
 }
 
 .btn-info {
   background-color: #17a2b8;
-  color: #fff;
 }
 
 .btn-info:hover {
@@ -41,7 +44,6 @@
 
 .btn-danger {
   background-color: #dc3545;
-  color: #fff;
 }
 
 .btn-danger:hover {
@@ -50,7 +52,6 @@
 
 .btn-secondary {
   background-color: #6c757d;
-  color: #fff;
 }
 
 .btn-secondary:hover {
@@ -59,7 +60,6 @@
 
 .btn-primary {
   background-color: #007bff;
-  color: #fff;
 }
 
 .btn-primary:hover {
@@ -68,7 +68,6 @@
 
 .btn-success {
   background-color: #28a745;
-  color: #fff;
 }
 
 .btn-success:hover {
@@ -85,10 +84,6 @@
 
 .m-0 {
   margin: 0;
-}
-
-.bg-warning {
-  background-color: #ffc107;
 }
 
 .text-center {
