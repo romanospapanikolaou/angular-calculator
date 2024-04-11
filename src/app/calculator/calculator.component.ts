@@ -26,6 +26,15 @@ export class CalculatorComponent implements OnInit {
     }
   }
 
+  @HostListener('document:keydown', ['$event'])
+  handleKeyDownEvent(event: KeyboardEvent) {
+    const key = event.key;
+    if (key === 'Backspace') {
+      event.preventDefault(); // Prevent browser navigation
+      this.clear();
+    }
+  }
+
   isNumeric(str: any) {
     if (typeof str != 'string') return false;
     return !isNaN(str as any) && !isNaN(parseFloat(str));
