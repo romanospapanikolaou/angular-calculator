@@ -23,6 +23,9 @@ export class CalculatorComponent implements OnInit {
       this.getAnswer();
     } else if (key === 'Backspace') {
       this.clear();
+    } else if (key === ' ') {
+      event.preventDefault(); // Prevent space from triggering scroll
+      this.allClear();
     }
   }
 
