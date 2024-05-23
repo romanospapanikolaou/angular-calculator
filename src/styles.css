@@ -16,6 +16,6 @@ body {
   background-image: url("https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(10px); /* Adjust the blur radius as needed */
-  z-index: -1; /* Ensure the container stays behind other content */
+  filter: blur(10px);
+  z-index: -1;
 }

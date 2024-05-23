@@ -1,27 +1,56 @@
-# AngularCalculator
+# Angular Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+This project is a simple calculator application built with Angular. It provides a user-friendly interface for performing basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-## Development server
+![Calculator Screenshot](/src/assets/Screenshot%201.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Basic arithmetic operations: addition, subtraction, multiplication, and division.
+- Clear input and result.
+- Backspace functionality to remove the last entered character.
+- Real-time display of input and result.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+To run the Angular Weather App locally, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/romanospapanikolaou/angular-calculator.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd angular-calculator
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
+5. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/) to view the app.
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Performing basic arithmetic operations
+- You can also use the the corresponding buttons on the keyboard.
+- Enjoy a responsive design that adapts to different screen sizes.
 
-## Running end-to-end tests
+## Contributing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
-## Further help
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature`)
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature`)
+6. Create a new Pull Request.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Acknowledgements
+
+- Background picture by [PNGtree](https://pngtree.com).
+- Built with [Angular](https://angular.io/).
