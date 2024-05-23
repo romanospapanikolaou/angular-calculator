@@ -10,14 +10,22 @@
       <div class="form-control" type="text">{{ result }}</div>
     </div>
     <div class="col-sm-12 p-1 m-0">
-      <button class="btn btn-info col-sm-6" type="button" (click)="allClear()">
+      <button
+        class="btn btn-lg btn-info col-sm-3 p-1"
+        type="button"
+        (click)="allClear()"
+      >
         Clear
       </button>
-      <button class="btn btn-danger col-sm-3" type="button" (click)="clear()">
+      <button
+        class="btn btn-lg btn-danger col-sm-6 p-1"
+        type="button"
+        (click)="clear()"
+      >
         Back
       </button>
       <button
-        class="btn btn-secondary col-sm-3"
+        class="btn btn-secondary col-sm-3 p-1"
         type="button"
         (click)="pressOperator('/')"
       >
