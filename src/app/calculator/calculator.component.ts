@@ -32,6 +32,10 @@ export class CalculatorComponent implements OnInit {
       this.toggleSign();
     } else if (key === 's') {
       this.getSquareRoot();
+    } else if (key === 'p') {
+      this.insertPi();
+    } else if (key === 'l') {
+      this.calculateLogarithm10();
     }
   }
 
