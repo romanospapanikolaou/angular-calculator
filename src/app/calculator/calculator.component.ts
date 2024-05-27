@@ -88,6 +88,11 @@ export class CalculatorComponent implements OnInit {
     }
   }
 
+  insertPi() {
+    this.input += Math.PI.toString();
+    this.calcAnswer();
+  }
+
   isNumeric(str: any): boolean {
     if (typeof str != 'string') return false;
     return !isNaN(str as any) && !isNaN(parseFloat(str));
