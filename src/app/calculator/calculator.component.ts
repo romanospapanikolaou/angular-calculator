@@ -13,6 +13,9 @@ export class CalculatorComponent implements OnInit {
   @HostListener('document:keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     const key = event.key;
+    if (key === ' ') {
+      event.preventDefault();
+    }
     if (this.isNumeric(key)) {
       this.pressNum(key);
     } else if (key === '.' || key === ',') {
@@ -26,17 +29,20 @@ export class CalculatorComponent implements OnInit {
     } else if (key === 'c') {
       this.allClear();
     } else if (key === '-') {
-      this.toggleSign(); // Toggle sign when '-' key is pressed
+      this.toggleSign();
     } else if (key === 's') {
-      this.getSquareRoot(); // Calculate square root when 's' key is pressed
+      this.getSquareRoot();
     }
   }
 
   @HostListener('document:keydown', ['$event'])
   handleKeyDownEvent(event: KeyboardEvent) {
     const key = event.key;
+    if (key === ' ') {
+      event.preventDefault();
+    }
     if (key === 'Backspace') {
-      event.preventDefault(); // Prevent browser navigation
+      event.preventDefault();
       this.clear();
     }
   }
