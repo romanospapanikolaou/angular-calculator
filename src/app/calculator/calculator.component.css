@@ -141,3 +141,9 @@ h2 {
 .instruction-text li {
   margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+  .instruction-text {
+    display: none;
+  }
+}
