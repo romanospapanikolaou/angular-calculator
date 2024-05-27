@@ -99,6 +99,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   pressNum(num: string) {
+    if (this.input.length >= 20) return; // Limit input to 20 digits
     if (num === '.' && this.getLastOperand()?.includes('.')) return;
     if (
       num === '0' &&
