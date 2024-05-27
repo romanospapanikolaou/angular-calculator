@@ -89,8 +89,10 @@ export class CalculatorComponent implements OnInit {
   }
 
   insertPi() {
-    this.input += Math.PI.toString();
-    this.calcAnswer();
+    if (this.input === '') {
+      this.input += Math.PI.toString();
+      this.calcAnswer();
+    }
   }
 
   isNumeric(str: any): boolean {
