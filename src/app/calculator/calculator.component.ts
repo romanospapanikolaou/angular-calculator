@@ -55,9 +55,9 @@ export class CalculatorComponent implements OnInit {
     if (this.input !== '' && this.input !== '0') {
       const firstChar = this.input.charAt(0);
       if (firstChar === '-') {
-        this.input = this.input.slice(1); // Remove the minus sign
+        this.input = this.input.slice(1);
       } else {
-        this.input = '-' + this.input; // Add a minus sign
+        this.input = '-' + this.input;
       }
       this.calcAnswer();
     }
