@@ -10,14 +10,22 @@
         type="button"
         (click)="allClear()"
       >
-        Clear
+        AC
       </button>
       <button
-        class="btn btn-lg btn-danger col-sm-6 p-1"
+        class="btn btn-lg btn-danger col-sm-3 p-1"
         type="button"
         (click)="clear()"
       >
-        Back
+        BACK
+      </button>
+      <button
+        class="btn btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="toggleSign()"
+      >
+        +/-
+        <!-- Button to toggle sign -->
       </button>
       <button
         class="btn btn-secondary col-sm-3 p-1"
@@ -132,6 +140,7 @@
       >
         0
       </button>
+
       <button
         class="btn btn-lg btn-success col-sm-6 p-1"
         type="button"
