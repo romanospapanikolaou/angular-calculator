@@ -19,11 +19,11 @@
 .form-group {
   padding: 5px;
   font-weight: bold;
-  background-color: #c7c7c7; /* Light Gray background color */
-  border: 4px solid #353535; /* Gray border color */
+  background-color: #c7c7c7;
+  border: 4px solid #353535;
   border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.9); /* Dark Gray shadow */
-  color: #333; /* Dark text color */
+  box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.9);
+  color: #333;
 }
 
 .form-control {
@@ -38,10 +38,10 @@
   font-size: 24px;
   font-weight: bold;
   padding: 15px 15px;
-  background-color: #000; /* Change button background color to black */
-  color: #fff; /* Change button text color to white */
+  background-color: #000;
+  color: #fff;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
-  border: 4px solid #353535; /* Gray border color */
+  border: 4px solid #353535;
 }
 
 .btn-info {
