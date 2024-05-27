@@ -84,6 +84,14 @@
   background-color: #1a632a;
 }
 
+.btn-orange {
+  background-color: orange;
+}
+
+.btn-orange:hover {
+  background-color: rgb(182, 100, 0);
+}
+
 .col-sm-12 {
   display: flex;
 }

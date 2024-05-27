@@ -6,6 +6,29 @@
     </div>
     <div class="col-sm-12 p-1 m-0">
       <button
+        class="btn btn-orange col-sm-3 p-1"
+        type="button"
+        (click)="getSquareRoot()"
+      >
+        √
+      </button>
+      <button
+        class="btn btn-orange col-sm-3 p-1"
+        type="button"
+        (click)="calculateSquare()"
+      >
+        x²
+      </button>
+      <button
+        class="btn btn-orange col-sm-3 p-1"
+        type="button"
+        (click)="calculateLogarithm10()"
+      >
+        log10
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
         class="btn btn-lg btn-info col-sm-3 p-1"
         type="button"
         (click)="allClear()"
@@ -25,7 +48,6 @@
         (click)="toggleSign()"
       >
         +/-
-        <!-- Button to toggle sign -->
       </button>
       <button
         class="btn btn-secondary col-sm-3 p-1"
@@ -140,7 +162,6 @@
       >
         0
       </button>
-
       <button
         class="btn btn-lg btn-success col-sm-6 p-1"
         type="button"

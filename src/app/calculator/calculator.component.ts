@@ -27,6 +27,8 @@ export class CalculatorComponent implements OnInit {
       this.allClear();
     } else if (key === '-') {
       this.toggleSign(); // Toggle sign when '-' key is pressed
+    } else if (key === 's') {
+      this.getSquareRoot(); // Calculate square root when 's' key is pressed
     }
   }
 
@@ -48,6 +50,41 @@ export class CalculatorComponent implements OnInit {
         this.input = '-' + this.input; // Add a minus sign
       }
       this.calcAnswer();
+    }
+  }
+
+  // scientific operations
+
+  calculateSquare() {
+    if (this.input !== '') {
+      const number = parseFloat(this.input);
+      const square = number * number;
+      this.input = square.toString();
+      this.calcAnswer();
+    }
+  }
+
+  getSquareRoot() {
+    if (this.input !== '' && this.input !== '0') {
+      const result = Math.sqrt(parseFloat(this.input));
+      if (!isNaN(result)) {
+        this.result = result.toString();
+        this.input = this.result;
+      } else {
+        this.result = '';
+      }
+    }
+  }
+  calculateLogarithm10() {
+    if (this.input !== '' && this.input !== '0') {
+      const num = parseFloat(this.input);
+      if (!isNaN(num) && num > 0) {
+        const result = Math.log10(num);
+        this.result = result.toString();
+        this.input = this.result;
+      } else {
+        this.result = '';
+      }
     }
   }
 
